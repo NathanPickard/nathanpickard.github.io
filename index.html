@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Nathan Pickard - Portfolio</title>
+  <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+  <link data-require="font-awesome@4.3.0" data-semver="4.3.0" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+</head>
+
+<body ng-app="Portfolio">
+
+  <div class="fill-height">
+    <div ui-view=""></div>
+  </div>
+
+  <!--<md-toolbar layout="row">
+    <md-button class="menu" ng-click="ul.toggleList();" aria-label="Show Nav List" hide-gt-xs>
+      <md-icon md-svg-icon="menu"></md-icon>
+    </md-button>
+    <h2>Nathan Pickard</h2>
+  </md-toolbar>
+
+  <div class="container" layout="row" flex>
+    <md-sidenav md-is-locked-open="$mdMedia('gt-xs')" class="md-whiteframe-4dp" md-component-id="left">
+      <md-list ng-click="ul.toggleList()">
+        <md-list-item ng-repeat="i in ul.navItems">
+          <md-button ng-click="ul.selectItem(i)">
+            <md-icon md-svg-src="{{i.icon}}" class="navItem"></md-icon>{{i.title}}</md-button>
+        </md-list-item>
+      </md-list>
+    </md-sidenav>
+
+
+    <md-content id="content" flex>
+
+      <h2>{{ul.selected.title}}</h2>
+      <p>{{ul.selected.content}}</p>
+    </md-content>
+
+  </div>-->
+
+
+
+  <md-subheader>&copy Nathan Pickard 2017</md-subheader>
+
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="node_modules/angular-animate/angular-animate.js"></script>
+  <script src="node_modules/angular-aria/angular-aria.min.js"></script>
+  <script src="node_modules/angular-material/angular-material.min.js"></script>
+  <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+
+
+  <script src="app/app.js"></script>
+  <script src="app/modules.js"></script>
+  <script src="components/home.Ctrl.js"></script>
+  <script src="components/aboutCtrl.js"></script>
+  <script src="NavLinkDirective.js"></script>
+  <script src="NavToggleDirective.js"></script>
+  <script src="NavService.js"></script>
+  <script src="PortfolioController.js"></script>
+
+</body>
+
+</html>

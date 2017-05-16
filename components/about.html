@@ -1,0 +1,29 @@
+<div class="aboutpage">
+  <img src="../img/profile-img.jpg" id="profile">
+
+  <h3>Hi there!</h3>
+
+  <p>My name is Nathan Pickard and I am a full-stack JavaScript developer with experience in Android mobile development. I'm
+    a problem solving handyman with a background in hardware assembly and maintenance. I believe in leveraging software and
+    the latest technologies to delight and empower the end user. The endless possibilities of ever evolving web development
+    inspire me to enable the end user experience technologies that enrich their daily lives and empower them to reach their
+    goals.
+  </p>
+
+  <div ng-controller="aboutCtrl" class="sample" layout="column" ng-cloak>
+    <md-content class="md-padding">
+      <md-tabs md-selected="selectedIndex" md-border-bottom md-autoselect>
+        <md-tab ng-repeat="tab in tabs" ng-disabled="tab.disabled" label="{{tab.title}}">
+          <div class="tab tab{{$index%4}}" style="padding: 25px; text-align: center;">
+            <div ng-bind="tab.content"></div>
+            <br/>
+            <!--<md-button class="md-primary md-raised" ng-click="nextTab( tab )" ng-disabled="tabs.length <= 1">Next</md-button>-->
+          </div>
+        </md-tab>
+      </md-tabs>
+    </md-content>
+  </div>
+
+  <img src="../img/profile2-img.jpg" id="profile2">
+
+</div>

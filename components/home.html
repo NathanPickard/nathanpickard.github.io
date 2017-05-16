@@ -1,0 +1,51 @@
+<md-toolbar layout="row" class="toolbarheader">
+  <md-button class="menu" ng-click="toggleLeft()" aria-label="Show Navigation" hide-gt-xs>
+    <md-icon md-svg-icon="menu"></md-icon>
+  </md-button>
+  <div id="toolbar-top">
+    <h4>Nathan Pickard <span style="font-size: 15px">{Full-stack JavaScript Developer}<span></h4>
+    </div>
+  </md-toolbar>
+
+  <div layout="column">
+
+  <div class="container" layout="row" flex>
+    <md-sidenav class="md-whiteframe-4dp" id="sidenavigation" md-component-id="left" md-is-locked-open="$mdMedia('gt-xs')">
+
+      <md-content role="navigation">
+        <ul class="side-nav">
+          <li ng-repeat="section in vm.nav.sections" class="parent-list-item" ng-class="{'parentActive' : vm.isSectionSelected(section)}">
+            <h2 class="nav-heading" ng-if="section.type === 'heading'" id="heading_{{ section.name | nospace }}">
+              {{section}}
+            </h2>
+            <nav-link section="section" ng-if="section.type === 'link'"></nav-link>
+            <nav-toggle section="section" ng-if="section.type === 'toggle'"></nav-toggle>
+          </li>
+        </ul>
+
+      <div class="externalLinks">
+        <md-button href="https://www.linkedin.com/in/nathanpickard/" target="_blank">
+          <md-icon md-svg-icon="linkedin" aria-label="Go to LinkedIn"></md-icon>
+        </md-button>
+        <md-button href="https://github.com/NathanPickard" target="_blank">
+          <md-icon md-svg-icon="github" aria-label="Go to GitHub"></md-icon>
+        </md-button>
+        <md-button href="https://twitter.com/NathanPickard" target="_blank">
+          <md-icon md-svg-icon="twitterWhite" aria-label="Go to Twitter"></md-icon>
+        </md-button>
+      </div>
+
+      </md-content>
+
+    </md-sidenav>
+
+      <md-content style="background-color: lightgray" flex>
+        <h3 id="pagetitle">Full-stack JavaScript Developer based in the Portland, OR area</h3>
+        <md-divider></md-divider>
+       <ui-view name="content"></ui-view>
+      </md-content>
+      
+    </div>
+  
+
+</div>
