@@ -11,7 +11,7 @@
         content: "Having a natural aptitude for technology, I've been a computer enthusiast since I can remember." +
         "  I grew up from my adolescence to my early 20s in Murfreesboro, TN, just south of Nashville." + 
         "  I spent 8 months as a maintenance crew member in the beautiful Yosemite National Park in 2012." +
-        "  After moving to the Portland metro area in mid 2013, I call in the City of Roses my home since." +
+        "  After moving to the Portland metro area in mid 2013, I call in the City of Roses my home ever since." +
         " After learning a good bit of Java and building my own Android apps in Android Studio " + '\n' +
         ", moving to web development was the obvious choice in creating a more well-rounded user experience"
       },
