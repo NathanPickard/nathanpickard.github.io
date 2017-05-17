@@ -47,13 +47,18 @@ md-list-item > button {
   font-size: 4px;
 }*/
 
+.side-nav {
+  margin-left: px;
+}
+
 #sidenavigation {
-  max-width: 270px;
+  max-width: 255px;
+  /*margin-left: -15px;*/
 }
 
 .side-nav .md-button {
   text-align: left;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .side-nav .md-button > md-icon {
@@ -85,13 +90,14 @@ md-list-item > button {
 
 .externalLinks {
   background-color: lightgray;
+  padding-left: 15px;
   /*max-width: 200px; */
    
 }
 
 .externalLinks > a.md-button { 
   /*background-color: pink;*/
-  min-width: 65px;
+  min-width: 55px;
 }
 
 

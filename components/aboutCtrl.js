@@ -21,7 +21,7 @@
       },
       {
         title: 'Current Activities',
-        content: "Always learning in in's and out's of full-stack web development.  Currently focusing on Angular and the Angular Material framework."
+        content: "Always learning the in's and out's of full-stack web development.  Currently focusing on AngularJS and the Angular Material framework."
       }
     ],
       selected = null,
