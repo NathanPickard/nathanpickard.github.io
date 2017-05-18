@@ -167,11 +167,8 @@ md-list-item > button {
 
 .contactpage {
   padding-left: 30px;
+  padding-right: 30px;
   padding-top: 20px;
-}
-
-.contactpagebuttons > .md-button:hover {
-  
 }
 
 
