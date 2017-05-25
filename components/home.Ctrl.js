@@ -38,7 +38,6 @@
           };
         }
 
-
         function isOpen(section) {
           return nav.isSectionSelected(section);
         }
