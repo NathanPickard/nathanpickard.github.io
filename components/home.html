@@ -5,11 +5,12 @@
   <div id="toolbar-top">
     <h4>Nathan Pickard <span style="font-size: 15px">{Full-stack JavaScript Developer}<span></h4>
     </div>
-  </md-toolbar>
+</md-toolbar>  
 
-  <div layout="column">
+<div layout="row">
 
-  <div class="container" layout="row" flex>
+  <div class="container" layout="row">
+    <div flex>
     <md-sidenav class="md-whiteframe-4dp" id="sidenavigation" md-component-id="left" md-is-locked-open="$mdMedia('gt-xs')">
 
       <md-content role="navigation">
@@ -33,19 +34,38 @@
         <md-button href="https://twitter.com/NathanPickard" target="_blank">
           <md-icon md-svg-icon="twitter" aria-label="Go to Twitter"></md-icon>
         </md-button>
-      </div>
+      </div>      
 
       </md-content>
-
     </md-sidenav>
+    </div>
+  </div>  
 
+    <div layout="column">
+      <div flex>
       <md-content style="background-color: lightgray" flex>
         <h3 id="pagetitle">Full-stack JavaScript Developer based in the Portland, OR area</h3>
-        <md-divider></md-divider>
-        <h2>Hi there</h2>
-       <ui-view name="content"></ui-view>
+        <md-divider></md-divider>       
       </md-content>
-      
-    </div>  
 
-</div>
+      
+
+  <div flex>
+      <md-content flex>
+        <ui-view name="content"></ui-view>
+      </md-content>  
+  </div>
+
+    </div>
+
+    </div>
+
+    <!--<div layout="row">
+      <div flex>First item in row</div>
+      <div flex>Second item in row</div>
+    </div>
+
+   <div layout="column">
+     <div flex>First item in column</div>
+     <div flex>Second item in column</div>
+  </div>-->
