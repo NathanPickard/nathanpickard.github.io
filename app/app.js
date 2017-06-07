@@ -38,7 +38,10 @@
             views: {
               '@': {
                 templateUrl: 'components/home.html',
-                controller: 'HomeCtrl as vm'                
+                controller: 'HomeCtrl as vm'
+              },
+              'content@home': {
+                template: 'This is a TEST'
               }
             }
           })
