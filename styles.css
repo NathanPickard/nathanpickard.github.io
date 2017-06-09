@@ -116,15 +116,6 @@ md-list-item > button {
   -webkit-transition: -webkit-transform .3s ease-in-out;
 }
 
-/*.side-nav .md-button > ul {
-  
-  font-size: px;
-}*/
-
-/*.side-nav .md-button > a {
-  font-size: 5px;
-}*/
-
 .md-toolbar-tools {
   font-size: 35px;
   
@@ -169,6 +160,12 @@ md-list-item > button {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 20px;
+}
+
+md-tab-content {
+  background-color: #2196F3;
+  color: white;
+  /*max-height: 180px;*/
 }
 
 
