@@ -4,18 +4,18 @@
     <!--<div flex-sm="100" flex-gt-sm="90" flex-gt-md="70" flex-gt-lg="50" class="md-whiteframe-z2">-->
     <div class="md-whiteframe-5dp">
       <md-content class="md-padding">
-        <form name="contactForm">
+        <form name="contactForm" data-ng-submit="cf.sendMail()">
           <md-input-container>
             <label>Name:</label>
-            <input type="text">
+            <input type="text" data-ng-model="cf.contactName">
           </md-input-container>
           <md-input-container>
             <label>Email:</label>
-            <input type="email">
+            <input type="email" data-ng-model="cf.contactEmail">
           </md-input-container>
           <md-input-container>
             <label>Message:</label>
-            <textarea cols="40" rows="5"></textarea>
+            <textarea  data-ng-model="cf.contactMsg" required cols="40" rows="5"></textarea>
           </md-input-container>
           <md-button type="submit" class="md-primary md-raised">Send</md-button>
         </form>
