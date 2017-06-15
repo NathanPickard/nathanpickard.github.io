@@ -14,7 +14,7 @@
     <md-sidenav class="md-whiteframe-4dp" id="sidenavigation" md-component-id="left" md-is-locked-open="$mdMedia('gt-xs')">
 
       <md-content role="navigation">
-        <ul class="side-nav">
+        <ul class="side-nav" ng-click="toggleLeft()">
           <li ng-repeat="section in vm.nav.sections" class="parent-list-item" ng-class="{'parentActive' : vm.isSectionSelected(section)}">
             <h2 class="nav-heading" ng-if="section.type === 'heading'" id="heading_{{ section.name | nospace }}">
               {{section}}

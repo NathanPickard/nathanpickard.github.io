@@ -41,7 +41,7 @@
                 controller: 'HomeCtrl as vm'
               },
               'content@home': {
-                template: 'This is a TEST'
+                templateUrl: 'components/homepage.html'
               }
             }
           })

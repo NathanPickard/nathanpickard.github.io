@@ -1,44 +1,50 @@
 <div class="contactpage">
 
-  <div layout="column" layout-align="center center">
-    <!--<div flex-sm="100" flex-gt-sm="90" flex-gt-md="70" flex-gt-lg="50" class="md-whiteframe-z2">-->
-    <div class="md-whiteframe-5dp">
+  <div data-ng-controller="contactFormController as cf" flex layout="row" layout-align="center center">
+    <div flex-sm="100" flex-gt-sm="90" flex-gt-md="70" flex-gt-lg="50" class="md-whiteframe-z2">
+      <!--<div class="md-whiteframe-5dp">-->
       <md-content class="md-padding">
-        <form name="contactForm" data-ng-submit="cf.sendMail()">
-          <md-input-container>
-            <label>Name:</label>
-            <input type="text" data-ng-model="cf.contactName">
-          </md-input-container>
-          <md-input-container>
-            <label>Email:</label>
-            <input type="email" data-ng-model="cf.contactEmail">
-          </md-input-container>
-          <md-input-container>
-            <label>Message:</label>
-            <textarea  data-ng-model="cf.contactMsg" required cols="40" rows="5"></textarea>
-          </md-input-container>
-          <md-button type="submit" class="md-primary md-raised">Send</md-button>
-        </form>
+        <div flex-sm="100" flex-gt-sm="95" layout-sm="column">
+          <form name="contactForm" data-ng-submit="cf.sendMail()">
+
+            <md-input-container>
+              <label>Name:</label>
+              <input type="text" data-ng-model="cf.contactName">
+            </md-input-container>
+
+            <md-input-container flex>
+              <label>Email:</label>
+              <input type="email" data-ng-model="cf.contactEmail" required>
+            </md-input-container>
+
+            <md-input-container>
+              <label>Message:</label>
+              <textarea data-ng-model="cf.contactMsg" required cols="40" rows="5"></textarea>
+            </md-input-container>
+
+            <md-button type="submit" class="md-primary" ng-class="{'md-raised': (contactForm.$dirty && contactForm.$valid) }">Send</md-button>
+          </form>
+        </div>
       </md-content>
+      </div>
     </div>
-  </div>
 
 
-  <div layout="column" layout-align="center center">
-    <h4>Connect and follow me on LinkedIn, GitHub, and Twitter!</h4>
-    <div>
-      <md-button id="linkedincontact" href="https://www.linkedin.com/in/nathanpickard/" target="_blank">
-        <md-icon md-svg-icon="linkedin" aria-label="Go to LinkedIn"></md-icon>
-      </md-button>
+    <div layout="column" layout-align="center center">
+      <h4>Connect and follow me on LinkedIn, GitHub, and Twitter!</h4>
+      <div>
+        <md-button id="linkedincontact" href="https://www.linkedin.com/in/nathanpickard/" target="_blank">
+          <md-icon md-svg-icon="linkedin" aria-label="Go to LinkedIn"></md-icon>
+        </md-button>
 
-      <md-button href="https://github.com/NathanPickard" target="_blank">
-        <md-icon md-svg-icon="github" aria-label="Go to GitHub"></md-icon>
-      </md-button>
+        <md-button href="https://github.com/NathanPickard" target="_blank">
+          <md-icon md-svg-icon="github" aria-label="Go to GitHub"></md-icon>
+        </md-button>
 
-      <md-button id="twittercontact" href="https://twitter.com/NathanPickard" target="_blank">
-        <md-icon md-svg-icon="twitterWhite" aria-label="Go to Twitter"></md-icon>
-      </md-button>
+        <md-button id="twittercontact" href="https://twitter.com/NathanPickard" target="_blank">
+          <md-icon md-svg-icon="twitterWhite" aria-label="Go to Twitter"></md-icon>
+        </md-button>
+      </div>
     </div>
-  </div>
 
-</div>
+  </div>
