@@ -151,6 +151,11 @@ md-list-item > button {
   padding-left: 5px;
 }
 
+.homepage {
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
 .aboutpage {
   padding-left: 30px;
   padding-top: 20px;
@@ -168,6 +173,9 @@ md-tab-content {
   /*max-height: 180px;*/
 }
 
+md-card {
+  max-width: 1000px;
+}
 
 #docs-nav-Portfolio li:first-child  {
   font-size: 5px;
