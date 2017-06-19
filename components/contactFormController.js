@@ -4,6 +4,19 @@
   angular.module('Portfolio.controllers')
     .controller('contactFormController', ['$scope', '$http', '$mdToast', '$animate',
 
+      // function ($scope, $http, $mdToast, $animate) {
+      //   $scope.send = function (mail) {
+      //     $http.post('/sendmail', {
+      //       from: 'Nate PICKARD',
+      //       to: 'nathan.pickard87@gmail.com',
+      //       subject: 'Message from You knoW who',
+      //       text: mail.message
+      //     }).then(res => {
+      //       console.log('message was good to go and was sent!');
+      //     });
+      //   }
+      // }
+
       function ($scope, $http, $mdToast, $animate) {
         $scope.toastPosition = {
           bottom: false,
@@ -31,26 +44,19 @@
           $http.post('/contact-form', data).
             success(function (data, status, headers, config) {
 
-
               $mdToast.show(
                 $mdToast.simple()
-                  .content('Thanks for your message ' + this.contactName + '! Cheers!')
+                  .content('Thanks for your message, ' + data.contactName + '! Cheers!')
                   .position($scope.getToastPosition())
                   .hideDelay(5000)
               );
 
-              // $mdToast.show(
-              //   $mdToast.simple()
-              //     .content('Thanks for your message ' + this.contactName + '! Cheers!')
-              //     .position($scope.getToastPosition())
-              //     .hideDelay(5000)
-              // );
+            }).
+            error(function (data, status, headers, config) {
 
             });
-          error(function (data, status, headers, config) {
 
-          });
-        }
+        };
       }
     ]);
 })();
@@ -81,14 +87,14 @@
 //           contactMsg : this.contactMsg
 //         });
 
-//         $http.post('/contact-form', data).
-//           success(function(data, status, headers, config) {
-//             $mdToast.show(
-//               $mdToast.simple()
-//                 .content('Thanks for your message ' + data.contactName + ' You Rock!')
-//                 .position($scope.getToastPosition())
-//                 .hideDelay(5000)
-//             );
+        // $http.post('/contact-form', data).
+        //   success(function(data, status, headers, config) {
+        //     $mdToast.show(
+        //       $mdToast.simple()
+        //         .content('Thanks for your message ' + data.contactName + ' You Rock!')
+        //         .position($scope.getToastPosition())
+        //         .hideDelay(5000)
+        //     );
 
 //           }).
 //           error(function(data, status, headers, config) {
