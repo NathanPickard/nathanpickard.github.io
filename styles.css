@@ -195,6 +195,13 @@ md-card {
 #profile2 {
   max-width: 400px;
   padding: 20px;
+  display: inline-block;
+}
+
+#pdxskyline {
+  max-width: 400px;
+  padding: 20px;
+  display: inline-block;
 }
 
 #pagetitle {
@@ -286,5 +293,19 @@ md-card {
 #oregonicon {
   max-width: 120px;
 }
+
+.goToTop {
+  position: fixed;
+  width: 100px;
+  height: 40px;
+            bottom: 0;
+   right: 0;
+            z-index: 100000;
+            cursor: pointer;
+            margin: 10px;
+            -moz-opacity: 0.60;
+            opacity: .60;
+            filter: alpha(opacity=60);
+            }
 
 
