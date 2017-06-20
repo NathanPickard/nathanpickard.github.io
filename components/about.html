@@ -3,25 +3,20 @@
 
   <h3>Hi there!</h3>
 
-  <p>My name is Nathan Pickard and I am a full-stack JavaScript developer with experience in Android mobile development. I'm
-    a problem solving handyman with a background in hardware assembly and maintenance. I believe in leveraging software and
-    the latest technologies to delight and empower the end user. The endless possibilities of ever evolving web development
-    inspire me to enable the end user experience technologies that enrich their daily lives and empower them to reach their
-    goals.
-  </p>
-
-  <p>Hi, my name is Nathan Pickard and I am a full stack Javascript developer. I create web apps that enhance the user's daily
-    life, whether they are trying to track there diet while in the browser or looking up the local PDX weather on my native
-    android weather app. I have a knack for understanding how all the elements of an application fit together by leveraging
+  <p id="bio">My name is Nathan Pickard and I am a full stack Javascript developer.  
+    I'm also a problem solving handyman with a background in hardware assembly and maintenance.  I create web apps that enhance the user's daily
+    life, whether they are trying to track there diet while in the browser or looking up the local PDX weather on my native android weather app.   
+    I have a knack for understanding how all the elements of an application fit together by leveraging
     my full stack Javascript skills and technical aptitude. I have a proven ability to work effectively with a team to develop
     fully functioning web applications while I was taking advanced software development in full-stack JavaScript as a student
-    at Code Fellows PDX. The endless possibilities of ever evolving web development inspire me to enable the end user experience
-    technologies that enrich their daily lives and empower them to reach their goals. I'm currently looking for an opportunity as
-    a full stack Javascript developer with a lean towards front end development in AngularJS.</p>
+    at Code Fellows PDX. Intuitively leveraging software with the latest technologies in web development to make a user's experiences
+    more effective is what I believe in.  The endless possibilities of ever evolving web development ecosystem inspire me to enable the end user to experience
+    technologies that enrich their daily lives while empowering and inspiring them to reach their goals. <br><br>
+    I'm currently looking for an opportunity as a full stack Javascript developer with a lean towards front end development in AngularJS.</p>
 
     <md-divider></md-divider>
 
-  <div ng-controller="aboutCtrl" class="sample" layout="column" ng-cloak>
+  <div id="about-tabs" ng-controller="aboutCtrl" class="sample" layout="column" ng-cloak>
     <md-content class="md-padding">
       <md-tabs md-selected="selectedIndex" md-border-bottom md-autoselect>
         <md-tab ng-repeat="tab in tabs" ng-disabled="tab.disabled" label="{{tab.title}}">

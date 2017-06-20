@@ -17,11 +17,12 @@
       },
       {
         title: 'Hobbies',
-        content: "Passion for all things technology, music of all kinds, the great outdoors and excellent BBQ"
+        content: "Passion for all things technology, music of all kinds, the great outdoors and (of course) excellent BBQ."
       },
       {
         title: 'Current Activities',
-        content: "Always learning the in's and out's of full-stack web development.  I'm currently focusing on AngularJS and the Angular Material framework."
+        content: "Always learning the in's and out's of full-stack web development.  I'm currently focusing on AngularJS v1.6+ and the Angular Material framework"+
+        " (which I used to develop this portfolio website of mine!)"
       }
     ],
       selected = null,

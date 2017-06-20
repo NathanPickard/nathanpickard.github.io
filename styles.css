@@ -192,6 +192,14 @@ md-card {
   max-width: 250px;
 }
 
+#bio {
+  padding-right: 150px;
+}
+
+#about-tabs {
+  padding-right: 150px;
+}
+
 #profile2 {
   max-width: 400px;
   padding: 20px;
@@ -280,18 +288,22 @@ md-card {
 
 #jslogo {
   max-width: 90px;
+  display: inline;
 }
 
 #angularjslogo {
   max-width: 90px;
+  display: inline;
 }
 
 #nodejslogo {
   max-width: 110px;
+  display: inline;
 }
 
 #oregonicon {
   max-width: 120px;
+  display: inline;
 }
 
 .goToTop {
