@@ -47,7 +47,7 @@
             }
           })
           .state('home.home', {
-            url: 'homepage',
+            url: 'home',
             views: {
               'content@home': {
                 templateUrl: 'components/homepage.html'

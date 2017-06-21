@@ -306,6 +306,10 @@ md-card {
   display: inline;
 }
 
+#keyboard-img {
+  max-width: 650px;
+}
+
 .goToTop {
   position: fixed;
   width: 100px;
