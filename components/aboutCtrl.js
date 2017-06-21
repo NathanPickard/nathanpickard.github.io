@@ -19,7 +19,7 @@
         title: 'Hobbies',
         content: "Passion for all things technology, music of all kinds, the great outdoors and (of course) excellent BBQ." +
         " You can catch me experimenting with recipes and spice mixes for anything you can throw on the grill, adventuring in" +
-        " downtown PDX, and enjoying a wonderful cup of coffee no matter the time of day."
+        " downtown PDX, and enjoying a delicious cup of coffee no matter the time of day."
       },
       {
         title: 'Current Activities',
