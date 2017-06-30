@@ -13,7 +13,7 @@
         "  I spent 8 months as a maintenance crew member in the beautiful Yosemite National Park in 2012." +
         "  Shortly thereafter, I put down roots in the Portland metro area in mid 2013 and made the 'City of Roses' my home ever since." +
         " After learning a good bit of Java and building my own Android apps in Android Studio " + '\n' +
-        ", moving to web development was the obvious choice in creating a more well-rounded user experience"
+        ", moving to web development was the obvious choice in creating a more well-rounded user experience."
       },
       {
         title: 'Hobbies',
@@ -24,7 +24,9 @@
       {
         title: 'Current Activities',
         content: "Always learning the in's and out's of full-stack web development.  I'm currently focusing on AngularJS v1.6+ and the Angular Material framework"+
-        " (which I used to develop this portfolio website of mine!)"
+        " (which I used to develop this portfolio website of mine!).  My current project is a recipe storing web application that lets the user add, store, and delete,"+
+        " their own recipes.  The app is being developed from scratch using AngularJS 1.6x and Angular Material on the front-end, and MongoDB, Node.js with Express on" +
+        " the back-end.  I'm also utilizing webpack to bundle the project together.  Check it out on my Github page!"
       }
     ],
       selected = null,
