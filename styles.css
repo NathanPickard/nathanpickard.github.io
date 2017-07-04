@@ -152,7 +152,7 @@ md-list-item > button {
 }
 
 .homepage {
-  padding-left: 30px;
+  padding-left: 80px;
   padding-top: 20px;
 }
 
@@ -223,6 +223,10 @@ md-card {
 
 #wikidiet {
   max-width: 200px;
+}
+
+#myrecipescard {
+  background-color: #4CAF50;
 }
 
 #foodcartfindercard {
