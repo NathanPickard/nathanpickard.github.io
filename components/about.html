@@ -1,38 +1,43 @@
 <div class="aboutpage">
-  <img ng-src="../img/profile-img.jpg" id="profile">
 
-  <h3>Hi there!</h3>
+  <div layout="column" style="max-width: 1000px;">
 
-  <p id="bio">My name is Nathan Pickard and I am a full stack Javascript developer living in the Portland, OR metro area.  
-    I'm also a problem solving handyman with a background in hardware assembly and maintenance.  I create web apps that enhance the user's daily
-    life, whether they are trying to track there diet while in the browser or looking up the local PDX weather on my native android weather app.   
-    I have a knack for understanding how all the elements of an application fit together by leveraging
-    my full stack Javascript skills and technical aptitude. I have a proven ability to work effectively with a team to develop
-    fully functioning web applications while I was taking advanced software development in full-stack JavaScript as a student
-    at Code Fellows PDX. Intuitively leveraging software with the latest technologies in web development to make a user's experiences
-    more effective is what I believe in.  The endless possibilities of ever evolving web development ecosystem inspire me to enable the end user to experience
-    technologies that enrich their daily lives while empowering and inspiring them to reach their goals. <br><br>
-    I'm currently looking for an opportunity as a full stack Javascript developer with a lean towards front end development in AngularJS.</p>
+    <h3>Hi there!</h3>
+
+    <p id="bio">My name is Nathan Pickard and I am a full stack Javascript developer living in the Portland, OR metro area. I'm also
+      a problem solving handyman with a background in hardware assembly and maintenance. I create web apps that enhance the
+      user's daily life, whether they are trying to track there diet while in the browser or looking up the local PDX weather
+      on my native android weather app. I have a knack for understanding how all the elements of an application fit together
+      by leveraging my full stack Javascript skills and technical aptitude. I have a proven ability to work effectively with
+      a team to develop fully functioning web applications while I was taking advanced software development in full-stack
+      JavaScript as a student at Code Fellows PDX.
+      <br><br> Intuitively utilizing software with the latest technologies in web development to make a user's experiences
+      more effective is what I believe in. The endless possibilities of ever evolving web development ecosystem inspire me
+      to enable the end user to experience technologies that enrich their daily lives while empowering and inspiring them
+      to reach their goals. <br><br> I'm currently looking for an opportunity as a full stack Javascript developer with a
+      lean towards front end development in AngularJS.</p>
 
     <md-divider></md-divider>
 
-  <div id="about-tabs" ng-controller="aboutCtrl" class="sample" layout="column" ng-cloak>
-    <md-content class="md-padding">
-      <md-tabs md-selected="selectedIndex" md-border-bottom md-autoselect>
-        <md-tab ng-repeat="tab in tabs" ng-disabled="tab.disabled" label="{{tab.title}}">
-          <div class="tab tab{{$index%4}}" style="padding: 25px; text-align: center;">
-            <div ng-bind="tab.content"></div>
-            <br/>
-            <!--<md-button class="md-primary md-raised" ng-click="nextTab( tab )" ng-disabled="tabs.length <= 1">Next</md-button>-->
-          </div>
-        </md-tab>
-      </md-tabs>
-    </md-content>
+    <div id="about-tabs" ng-controller="aboutCtrl" class="sample" layout="column" ng-cloak>
+      <md-content class="md-padding">
+        <md-tabs md-selected="selectedIndex" md-border-bottom md-autoselect>
+          <md-tab ng-repeat="tab in tabs" ng-disabled="tab.disabled" label="{{tab.title}}">
+            <div class="tab tab{{$index%4}}" style="padding: 25px; text-align: center;">
+              <div ng-bind="tab.content"></div>
+              <br/>
+              <!--<md-button class="md-primary md-raised" ng-click="nextTab( tab )" ng-disabled="tabs.length <= 1">Next</md-button>-->
+            </div>
+          </md-tab>
+        </md-tabs>
+      </md-content>
+    </div>
+
   </div>
 
-<div>
-  <img ng-src="../img/profile2-img.jpg" id="profile2">
-  <img ng-src="../img/portland-skyline.jpg" id="pdxskyline">
-</div>
+  <div>
+    <img ng-src="../img/profile2-img.jpg" id="profile2">
+    <img ng-src="../img/portland-skyline.jpg" id="pdxskyline">
+  </div>
 
 </div>
