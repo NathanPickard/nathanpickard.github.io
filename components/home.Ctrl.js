@@ -28,10 +28,6 @@
           isFirstDisabled: false
         };
 
-        // function toggleNavList() {
-        //   $mdSidenav.toggle();
-        // }
-
         function buildToggler(componentId) {
           return function() {
             $mdSidenav(componentId).toggle();

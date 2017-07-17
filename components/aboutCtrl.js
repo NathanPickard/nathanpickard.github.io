@@ -13,7 +13,7 @@
         "  I spent 8 months as a maintenance crew member in the beautiful Yosemite National Park in 2012." +
         "  Shortly thereafter, I put down roots in the Portland metro area in mid 2013 and made the 'City of Roses' my home ever since." +
         " After learning a good bit of Java and building my own Android apps in Android Studio " + '\n' +
-        ", moving to web development was the obvious choice in creating a more well-rounded user experience."
+        ", moving to web development was the natural choice in creating a more well-rounded user experience."
       },
       {
         title: 'Hobbies',
