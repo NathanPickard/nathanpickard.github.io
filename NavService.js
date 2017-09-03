@@ -40,6 +40,13 @@
       })
 
       sections.push({
+        name: 'Blog',
+        type: 'link',
+        state: 'home.blog',
+        icon: 'blog'
+      })
+
+      sections.push({
         name: 'Contact',
         type: 'link',
         state: 'home.contact',

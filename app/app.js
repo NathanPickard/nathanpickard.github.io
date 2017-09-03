@@ -15,6 +15,7 @@
       $mdIconProvider.icon('web', './svg/202-sphere.svg', 24);
       $mdIconProvider.icon('android', './svg/449-android.svg', 24);
       $mdIconProvider.icon('about', './svg/047-stack.svg', 24);
+      $mdIconProvider.icon('blog', './svg/047-stack.svg', 24);
       $mdIconProvider.icon('contact', './svg/006-pencil.svg', 24);
       $mdIconProvider.icon('menu', './svg/190-menu.svg', 24);
       $mdIconProvider.icon('linkedin', './svg/458-linkedin.svg', 24);
@@ -80,6 +81,14 @@
             views: {
               'content@home': {
                 templateUrl: 'components/about.html'
+              }
+            }
+          })
+          .state('home.blog', {
+            url: 'blog',
+            views: {
+              'content@home': {
+                templateUrl: 'components/blog.html'
               }
             }
           })
