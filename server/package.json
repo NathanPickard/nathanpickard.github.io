@@ -1,0 +1,43 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nathan Pickard <nathan.pickard87@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.2",
+    "compression": "^1.7.0",
+    "connect-mongo": "^1.3.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "express-jwt": "^5.3.0",
+    "express-session": "^1.15.5",
+    "jsonwebtoken": "^7.4.3",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "mongodb": "^2.2.31",
+    "mongoskin": "^2.1.0",
+    "multer": "^1.3.0",
+    "nodemailer": "^4.1.0",
+    "path": "^0.12.7",
+    "q": "^1.5.0",
+    "request": "^2.81.0",
+    "rootpath": "^0.1.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^3.3.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "yargs": "^8.0.2"
+  }
+}
