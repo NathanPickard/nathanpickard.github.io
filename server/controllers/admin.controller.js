@@ -28,7 +28,7 @@ function getUpload() {
   var uploadDir = '../client/blog/_content/uploads';
 
   var storage = multer.diskStorage({
-    distination: uploadDir,
+    destination: uploadDir,
     fileName: function (req, file, cb) {
       var fileExtension = path.extname(file.originalname);
       var fileBase = path.basename(file.originalname, fileExtension);
