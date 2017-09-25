@@ -88,7 +88,7 @@
             url: 'blog',
             views: {
               'content@home': {
-                templateUrl: 'components/blog.html'
+                templateUrl: 'blog/client/blog/home/index.view.html'
               }
             }
           })

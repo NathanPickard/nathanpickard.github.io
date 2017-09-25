@@ -12,7 +12,7 @@ router.get('/', function (req, res) {
 });
 
 router.post('/', function (req, res) {
-  userService.authentication(req.body.username, req.body.password)
+  userService.authenticate(req.body.username, req.body.password)
     .then(function (token) {
       if (token) {
         req.session.token = token;

@@ -1,6 +1,1 @@
-{
-  "connectionString": "mongodb://localhost:27017/meanie",
-  "secret": "REPLACE THIS WITH SECRET",
-  "contactEmail": "REPLACE THIS WITH EMAIL ADDRESS",
-  "installed": false
-}
+{"connectionString":"mongodb://localhost:27017/meanie","secret":"REPLACE THIS WITH SECRET","contactEmail":"REPLACE THIS WITH EMAIL ADDRESS","installed":true}
