@@ -1,0 +1,44 @@
+<div itemscope itemtype="http://schema.org/Article" class="post-preview">
+  <h1 itemprop="name" class="post-title">{{blog.title}}</h1>
+
+  <h3 ng-if="blog.subtitle" class="post-subtitle">{{blog.subtitle}}</h3>
+
+  <span itemprop="articleBody">
+      <div post="blog.post"></div>
+  </span>
+
+  <br>
+
+  <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span class="post-meta">Posted by <a ng-href="/#/blogs"><span itemprop="name">{{username}}</span></a> on <span itemprop="datePublished" content="{{getFormattedDate(blog, true)}}">{{getFormattedDate(blog)}}</span></span>
+  </span>
+
+  <div class="post-meta" style="margin-top: 15px;">
+      <span class="glyphicon glyphicon-tags text-info" style="margin-right:5px;"></span>
+      <em ng-repeat="tag in blog.tags">
+          <a class="tag-link" ng-href="/#/blogs/tags/{{tag}}" style="margin-left:5px;">{{tag}}</a>{{$last ? '' : ', '}}
+      </em>
+  </div>
+
+  <br>
+
+  <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6" style="margin-top: -5px;">
+          <a facebook class="facebookShare" data-url='{{disqus.url}}' data-shares='shares'>{{ shares }}</a>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+          <a twitter data-lang="en" data-count='horizontal' data-url='{{disqus.url}}' data-via='{{twitterHandle}}' data-size="medium" data-text='{{blog.title}}' ></a>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+          <div gplus class="g-plus" data-size="tall" data-annotation="bubble" data-href='{{disqus.url}}' data-action='share'></div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+          <div linkedin class="linkedinShare" data-url='{{disqus.url}}' data-title='{{blog.title}}' data-summary="testing Linkedin Share" data-shares='linkedinshares'>{{linkedinshares}}</div>
+      </div>
+  </div>
+
+  <br>
+
+  <dir-disqus disqus_shortname="{{disqus.shortname}}" disqus_identifier="{{disqus.url}}" disqus_url="{{disqus.url}}"></dir-disqus>
+
+</div>

@@ -1,0 +1,49 @@
+{
+  "name": "Meow-BlogEdit",
+  "authors": [
+    "Sumeet Das <sumeetdas1992@gmail.com>"
+  ],
+  "description": "Blog Editor for Meow blogging engine",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "blog",
+    "meow",
+    "editor",
+    "edit",
+    "angularjs",
+    "angular"
+  ],
+  "main": "dist/blogedit.combo.min.js",
+  "license": "MIT",
+  "ignore": [
+    "*",
+    "!dist",
+    "!dist/**"
+  ],
+  "dependencies": {
+    "angular-marked": "~0.0.12",
+    "angular-ui-router": "~0.2.13",
+    "angular": "~1.4.3",
+    "angular-sanitize": "~1.4.3",
+    "bootstrap-css-only": "~3.3.4",
+    "js-yaml": "~3.3.0",
+    "angular-morph": "~0.1.0",
+    "angular-route": "~1.4.3"
+  },
+  "resolutions": {
+    "angular": "~1.4.3"
+  },
+  "homepage": "https://github.com/sumeetdas1992/Meow-BlogEdit",
+  "_release": "fa6374e18f",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "fa6374e18f97777c2b273759536be246969118dc"
+  },
+  "_source": "https://github.com/sumeetdas1992/Meow-BlogEdit.git",
+  "_target": "*",
+  "_originalSource": "meow-blogedit",
+  "_direct": true
+}

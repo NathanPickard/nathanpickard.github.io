@@ -46,6 +46,20 @@
         icon: 'contact'
       });
 
+      // sections.push({
+      //   name: 'Blog',
+      //   type: 'link',
+      //   state: 'home.blog',
+      //   icon: 'contact'
+      // });
+
+      // sections.push({
+      //   name: 'BlogEdit',
+      //   type: 'link',
+      //   state: 'home.blogedit',
+      //   icon: 'contact'
+      // });
+
       var self;
 
       return self = {

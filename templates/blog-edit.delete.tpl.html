@@ -1,0 +1,20 @@
+<div class="deleteModal">
+    
+        <span class="glyphicon glyphicon-remove close" ng-click="purgeDeleteScopeVar()" ></span>
+    
+        <div ng-if="!verify.deleteDone && !error.deleteDone" style="margin-top: 35px;">
+            <p class="text-info" style="margin-top: 10px;">To permanently delete the blog, please enter its name.</p>
+    
+            <p class="text-danger lead">{{blogToDelete.title}}</p>
+    
+            <input type="text" ng-model="verify.deleteInput"
+                   ng-style="verify.incorrectDeleteInput ? {width: '100%', color: 'red', border: '1px red solid'} : {width: '100%', color: 'black'}"
+                   ng-change="verify.incorrectDeleteInput = false;" style="width: 100%; color: black;"/>
+    
+            <button class="btn btn-danger" ng-click="deleteBlog(blogToDelete)" style="width: 100%; margin-top: 15px;">Delete this blog</button>
+        </div>
+    
+        <div ng-if="verify.deleteDone || error.deleteDone" style="margin-top: 45px;">
+            <h3 ng-class="verify.deleteDone ? 'text-success' : 'text-danger'">{{message.blogDeleted}}</h3>
+        </div>
+    </div>

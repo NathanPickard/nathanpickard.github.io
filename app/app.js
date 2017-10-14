@@ -91,6 +91,22 @@
               }
             }
           })
+          // .state('home.blog', {
+          //   url:'blog',
+          //   views: {
+          //     'content@home': {
+          //       templateUrl: 'templates/blog-view.base.tpl.html'
+          //     }
+          //   }
+          // })
+          // .state('home.blogedit', {
+          //   url:'blogedit',
+          //   views: {
+          //     'content@home': {
+          //       templateUrl: 'templates/blog-edit.post.tpl.html'
+          //     }
+          //   }
+          // })
           //   views: {
           //     // 'content@home': {
           //     // templateUrl: 'components/about.html'

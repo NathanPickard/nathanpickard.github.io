@@ -1,0 +1,35 @@
+{
+  "name": "Meow-BlogView",
+  "version": "0.0.2",
+  "description": "Blog viewer for Meow blogging engine",
+  "main": "dist/blogview.min.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "meow",
+    "blog-view"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "*",
+    "!dist/",
+    "!dist/**"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3",
+    "angular-utils-disqus": "~0.2.0",
+    "angular-ui-router": "~0.2.14",
+    "angular-sanitize": "~1.4.3",
+    "angular-marked": "~0.0.12",
+    "bootstrap-css-only": "~3.3.4",
+    "js-yaml": "~3.3.0", 
+    "marked": "~0.3.3",
+    "angular-morph": "~0.1.0",
+    "angular-socialshare": "~1.4.1",
+    "angular-route": "~1.4.3"
+  },
+  "resolutions": {
+    "angular": "~1.4.3"
+  }
+}

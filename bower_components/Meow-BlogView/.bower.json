@@ -1,0 +1,44 @@
+{
+  "name": "Meow-BlogView",
+  "homepage": "https://github.com/sumeetdas1992/Meow-BlogView",
+  "authors": [
+    "Sumeet Das <sumeetdas1992@gmail.com>"
+  ],
+  "description": "Blog viewer for Meow blogging engine",
+  "main": "dist/blogview.min.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "meow",
+    "blog-view"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "*",
+    "!dist/",
+    "!dist/**"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3",
+    "angular-utils-disqus": "~0.2.0",
+    "angular-ui-router": "~0.2.14",
+    "angular-sanitize": "~1.4.3",
+    "angular-marked": "~0.0.12",
+    "marked": "~0.3.3",
+    "angular-socialshare": "~1.4.1"
+  },
+  "resolutions": {
+    "angular": "~1.4.3"
+  },
+  "_release": "023bf34d6a",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "023bf34d6ae5da241c86c3c8702e281a5498f375"
+  },
+  "_source": "https://github.com/sumeetdas1992/Meow-BlogView.git",
+  "_target": "*",
+  "_originalSource": "meow-blogview",
+  "_direct": true
+}
