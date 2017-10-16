@@ -3,46 +3,54 @@
     <md-icon md-svg-icon="menu"></md-icon>
   </md-button>
   <div id="toolbar-top">
-    <h4>Nathan Pickard <span style="font-size: 15px">{Full-stack JavaScript Developer}<span></h4>
-    </div>
-</md-toolbar>  
+    <h4>Nathan Pickard
+      <span style="font-size: 15px">{Full-stack JavaScript Developer}
+        <span>
+    </h4>
+  </div>
+</md-toolbar>
 
 <div layout="row">
 
   <div class="container" layout="row">
     <div flex>
-    <md-sidenav class="md-whiteframe-4dp" id="sidenavigation" md-component-id="left" md-is-locked-open="$mdMedia('gt-xs')">
+      <md-sidenav class="md-whiteframe-4dp" id="sidenavigation" md-component-id="left" md-is-locked-open="$mdMedia('gt-xs')">
 
-      <md-content role="navigation">
-        <ul class="side-nav" ng-click="toggleLeft()">
-          <li ng-repeat="section in vm.nav.sections" class="parent-list-item" ng-class="{'parentActive' : vm.isSectionSelected(section)}">
-            <h2 class="nav-heading" ng-if="section.type === 'heading'" id="heading_{{ section.name | nospace }}">
-              {{section}}
-            </h2>
-            <nav-link section="section" ng-if="section.type === 'link'"></nav-link>
-            <nav-toggle section="section" ng-if="section.type === 'toggle'"></nav-toggle>
-          </li>
-        </ul>
+        <md-content role="navigation">
+          <ul class="side-nav" ng-click="toggleLeft()">
+            <li ng-repeat="section in vm.nav.sections" class="parent-list-item" ng-class="{'parentActive' : vm.isSectionSelected(section)}">
+              <h2 class="nav-heading" ng-if="section.type === 'heading'" id="heading_{{ section.name | nospace }}">
+                {{section}}
+              </h2>
+              <nav-link section="section" ng-if="section.type === 'link'"></nav-link>
+              <nav-toggle section="section" ng-if="section.type === 'toggle'"></nav-toggle>
+            </li>
+            <div>
+              <md-button a href="https://nathanpickard.wordpress.com/" target="_blank">
+                <md-icon md-svg-src="blog" aria-label="label" class="snumber"></md-icon>
+                Blog</md-button>
+            </div>
+          </ul>
 
-      <div class="externalLinks">
-        <md-button href="https://www.linkedin.com/in/nathanpickard/" target="_blank">
-          <md-icon md-svg-icon="linkedin" aria-label="Go to LinkedIn"></md-icon>
-        </md-button>
-        <md-button href="https://github.com/NathanPickard" target="_blank">
-          <md-icon md-svg-icon="github" aria-label="Go to GitHub"></md-icon>
-        </md-button>
-        <md-button href="https://twitter.com/NathanPickard" target="_blank">
-          <md-icon md-svg-icon="twitter" aria-label="Go to Twitter"></md-icon>
-        </md-button>
-      </div>      
+          <div class="externalLinks">
+            <md-button href="https://www.linkedin.com/in/nathanpickard/" target="_blank">
+              <md-icon md-svg-icon="linkedin" aria-label="Go to LinkedIn"></md-icon>
+            </md-button>
+            <md-button href="https://github.com/NathanPickard" target="_blank">
+              <md-icon md-svg-icon="github" aria-label="Go to GitHub"></md-icon>
+            </md-button>
+            <md-button href="https://twitter.com/NathanPickard" target="_blank">
+              <md-icon md-svg-icon="twitter" aria-label="Go to Twitter"></md-icon>
+            </md-button>
+          </div>
 
-      </md-content>
-    </md-sidenav>
+        </md-content>
+      </md-sidenav>
     </div>
-  </div>  
+  </div>
 
-    <div layout="column">
-      <!--<md-content style="background-color: lightgray">
+  <div layout="column">
+    <!--<md-content style="background-color: lightgray">
         <h3 id="pagetitle">Full-stack JavaScript Developer based in the Portland, OR area</h3>
         <md-divider></md-divider>       
       </md-content>-->
@@ -50,9 +58,9 @@
 
     <div flex>
       <md-content flex>
-          <div>
-            <ui-view name="content"></ui-view>
-          </div>
+        <div>
+          <ui-view name="content"></ui-view>
+        </div>
       </md-content>
     </div>
 

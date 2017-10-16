@@ -23,6 +23,7 @@
       $mdIconProvider.icon('twitterWhite', './svg/Twitter_Social_Icon_White.svg', 24);
       $mdIconProvider.icon('mail', './svg/388-mail.svg', 24);
       $mdIconProvider.icon('upArrow', './svg/up-arrow.svg', 24);
+      $mdIconProvider.icon('blog', './svg/010-blog.svg', 24);
 
       $mdThemingProvider.theme('default')
         .primaryPalette('blue')
@@ -91,28 +92,28 @@
               }
             }
           })
-          // .state('home.blog', {
-          //   url:'blog',
-          //   views: {
-          //     'content@home': {
-          //       templateUrl: 'templates/blog-view.base.tpl.html'
-          //     }
-          //   }
-          // })
-          // .state('home.blogedit', {
-          //   url:'blogedit',
-          //   views: {
-          //     'content@home': {
-          //       templateUrl: 'templates/blog-edit.post.tpl.html'
-          //     }
-          //   }
-          // })
-          //   views: {
-          //     // 'content@home': {
-          //     // templateUrl: 'components/about.html'
-          //     // }
-          //   }
-          // })
+          .state('home.blog', {
+            url: 'blog',
+            views: {
+              'content@home': {
+                templateUrl: 'https://nathanpickard.wordpress.com/'
+              }
+            }
+          })
+        // .state('home.blogedit', {
+        //   url:'blogedit',
+        //   views: {
+        //     'content@home': {
+        //       templateUrl: 'templates/blog-edit.post.tpl.html'
+        //     }
+        //   }
+        // })
+        //   views: {
+        //     // 'content@home': {
+        //     // templateUrl: 'components/about.html'
+        //     // }
+        //   }
+        // })
       }])
     //take all whitespace out of string
     .filter('nospace', function () {
