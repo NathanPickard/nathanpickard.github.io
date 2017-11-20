@@ -21,12 +21,21 @@
         " You can catch me experimenting with recipes and spice mixes for anything you can throw on the grill, adventuring in" +
         " downtown PDX, and enjoying a delicious cup of coffee no matter the time of day."
       },
+      // {
+      //   title: 'Current Activities',
+      //   content: "Always learning the in's and out's of full-stack web development.  I'm currently focusing on AngularJS v1.6+ and the Angular Material framework"+
+      //   " (which I used to develop this portfolio website of mine!).  My current project is a recipe storing web application that lets the user add, store, and delete,"+
+      //   " their own recipes.  The app is being developed from scratch using AngularJS 1.6x and Angular Material on the front-end, and MongoDB, Node.js with Express on" +
+      //   " the back-end.  I'm also utilizing webpack to bundle the project together.  Check it out on my Github page!"
+      // }
       {
         title: 'Current Activities',
-        content: "Always learning the in's and out's of full-stack web development.  I'm currently focusing on AngularJS v1.6+ and the Angular Material framework"+
-        " (which I used to develop this portfolio website of mine!).  My current project is a recipe storing web application that lets the user add, store, and delete,"+
+        content: "Always learning the in's and out's of full-stack web development.  I've made the jump from AngularJS to Angular 2+ and I'm really enjoying building and learning"+
+        " it's modern component-based architecture.  I've recently launched my own blog this past October and I'm excited to share the projects I'm currently working on, the subjects I'm seeking my teeth into"+
+        " and providing my own take on web development as I see it.  The link is in navigation to the left, so check it out and subscribe!" +
+        " My current project is a recipe storing web application that lets the user add, store, and delete,"+
         " their own recipes.  The app is being developed from scratch using AngularJS 1.6x and Angular Material on the front-end, and MongoDB, Node.js with Express on" +
-        " the back-end.  I'm also utilizing webpack to bundle the project together.  Check it out on my Github page!"
+        " the back-end.  I'm also utilizing webpack to bundle the project together.  Go check it out on my Github page!"
       }
     ],
       selected = null,
