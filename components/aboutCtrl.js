@@ -55,7 +55,7 @@
     // $scope.removeTab = function (tab) {
     //   var index = tabs.indexOf(tab);
     //   tabs.splice(index, 1);
-    };
+    // };
   }
 })();
 
