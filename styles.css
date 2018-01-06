@@ -300,6 +300,11 @@ md-card {
   display: inline;
 }
 
+#angularlogo {
+  max-width: 90px;
+  display: inline;
+}
+
 #nodejslogo {
   max-width: 110px;
   display: inline;
