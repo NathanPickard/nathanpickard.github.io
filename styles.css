@@ -176,6 +176,7 @@ md-tab-content {
 
 md-card {
   max-width: 800px;
+  margin: 20px;
 }
 
 #docs-nav-Portfolio li:first-child  {
