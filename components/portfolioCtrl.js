@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  angular.module('Portfolio.controlelrs')
+  angular.module('Portfolio.controllers')
     .controller('portfolioCtrl', function ($scope) {
 
       $scope.photos = [
