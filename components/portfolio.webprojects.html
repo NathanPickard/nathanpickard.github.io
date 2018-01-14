@@ -67,16 +67,17 @@
         </md-card-header-text>
       </md-card-header>
       <md-card-content>
+
         <p>Find a food cart based on your current location!</p>
 
         <div class="container slider">
 
             <img ng-repeat="photo in photos" class="slide" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)" ng-src="{{photo.src}}" />
     
-            <a class="arrow prev" href="#" ng-click="showPrev()"></a>
-            <a class="arrow next" href="#" ng-click="showNext()"></a>
+            <div class="arrow prev" href="#" ng-click="showPrev()"></div>
+            <div class="arrow next" href="#" ng-click="showNext()"></div>
     
-            <ul class="nav">
+            <ul class="img-nav">
                 <li ng-repeat="photo in photos" ng-class="{'active':isActive($index)}">
                     <img src="{{photo.src}}" alt="{{photo.desc}}" title="{{photo.desc}}" ng-click="showPhoto($index);" />
                 </li>

@@ -5,8 +5,9 @@
     .controller('portfolioCtrl', function ($scope) {
 
       $scope.photos = [
-        { src: './img/ftfss1.png', desc: 'image01' },
-        { src: './img/ftfss2.png', desc: 'image02' }
+        { src: '../img/ftfss1.png', desc: 'Image 01' },
+        { src: '../img/ftfss2.png', desc: 'Image 02' },
+        { src: '../img/ftfss3.png', desc: 'Image 03' }
       ];
 
       $scope._Index = 0;
