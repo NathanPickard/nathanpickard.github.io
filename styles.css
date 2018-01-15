@@ -143,7 +143,7 @@ md-list-item > button {
 
 .arrow.prev {
   background-image: url("../img/arrow-left.png");
-  left: 20px;
+  left: 5px;
   opacity: 0.2;
   /* transition: all 0.2s linear 0s; */
 }
@@ -151,7 +151,7 @@ md-list-item > button {
 .arrow.next {
   background-image: url("../img/arrow-right.png");
   opacity: 0.2;
-  right: 20px;
+  right: 5px;
   transition: all 0.2s linear 0s;
 }
 
@@ -163,17 +163,19 @@ md-list-item > button {
 }
 
 .img-nav {
-  bottom: -4px;
-  display: block;
-  height: 48px;
-  left: 0;
-  margin: 0 auto;
-  padding: 1em 0 0.8em;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  width: 100%;
-  z-index: 5;
+  bottom: -44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    left: 0;
+    margin: 0 auto;
+    padding: 1em 0 0.8em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 5;
 }
 
 .img-nav li {
@@ -196,12 +198,12 @@ md-list-item > button {
 }
 
 .slider {
-  border: 15px solid #FFFFFF;
-  border-radius: 5px;
-  height: 500px;
-  margin: 20px auto;
-  position: relative;
-  width: 800px;
+    border: 8px solid #FFFFFF;
+    border-radius: 5px;
+    height: 500px;
+    margin: 10px auto;
+    position: relative;
+    width: 750px;
 
   /* -webkit-perspective: 1000px;
   -moz-perspective: 1000px;
@@ -222,7 +224,7 @@ md-list-item > button {
   /* position: absolute; */
   top: 0;
   left: 0;
-  max-width: 800px;
+  max-width: 700px;
   max-height: 500px;
 
 }

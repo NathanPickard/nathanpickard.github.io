@@ -51,13 +51,13 @@
 
         <div class="container slider">
 
-            <img ng-repeat="photo in photos.set1" class="slide" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)" ng-src="{{photo.set1}}" />
+            <img ng-repeat="photo in photos" class="slide" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)" ng-src="{{photo.src}}" />
     
             <div class="arrow prev" href="#" ng-click="showPrev()"></div>
             <div class="arrow next" href="#" ng-click="showNext()"></div>
     
             <ul class="img-nav">
-                <li ng-repeat="photo in photos.set1" ng-class="{'active':isActive($index)}">
+                <li ng-repeat="photo in photos" ng-class="{'active':isActive($index)}">
                     <img src="{{photo.src}}" alt="{{photo.desc}}" title="{{photo.desc}}" ng-click="showPhoto($index);" />
                 </li>
             </ul>    
@@ -88,14 +88,14 @@
 
         <div class="container slider">
 
-            <img ng-repeat="photo in photos" class="slide" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)" ng-src="{{photo.src}}" />
+            <img ng-repeat="photo in photos.set1" class="slide" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)" ng-src="{{photo.set1}}" />
     
             <div class="arrow prev" href="#" ng-click="showPrev()"></div>
             <div class="arrow next" href="#" ng-click="showNext()"></div>
     
             <ul class="img-nav">
-                <li ng-repeat="photo in photos" ng-class="{'active':isActive($index)}">
-                    <img src="{{photo.src}}" alt="{{photo.desc}}" title="{{photo.desc}}" ng-click="showPhoto($index);" />
+                <li ng-repeat="photo in photos.set1" ng-class="{'active':isActive($index)}">
+                    <img src="{{photo.set1}}" alt="{{photo.desc}}" title="{{photo.desc}}" ng-click="showPhoto($index);" />
                 </li>
             </ul>    
         </div>
