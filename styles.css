@@ -67,7 +67,7 @@ md-list-item > button {
 
 .side-nav .md-button.active {
   color: #2196F3;
-  background-color: lightgray;
+  background-color: #E0E0E0;
 }
 
 .side-nav .md-button-toggle.active {
@@ -90,7 +90,7 @@ md-list-item > button {
 }
 
 .externalLinks {
-  background-color: lightgray;
+  background-color: #E0E0E0;
   padding-left: 15px;
   /*max-width: 200px; */
    
