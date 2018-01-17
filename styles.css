@@ -163,19 +163,19 @@ md-list-item > button {
 }
 
 .img-nav {
-  bottom: -44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 48px;
-    left: 0;
-    margin: 0 auto;
-    padding: 1em 0 0.8em;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    width: 100%;
-    z-index: 5;
+  bottom: -54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  left: 0;
+  margin: 0 auto;
+  padding: 1em 0 0.8em;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 5;
 }
 
 .img-nav li {
@@ -202,6 +202,7 @@ md-list-item > button {
     border-radius: 5px;
     height: 500px;
     margin: 10px auto;
+    margin-bottom: 40px;
     position: relative;
     width: 750px;
 
