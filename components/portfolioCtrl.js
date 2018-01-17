@@ -15,7 +15,9 @@
       $scope.photos.set1 = [
         { set1: 'https://s26.postimg.org/84rmb5zo9/ftfss1.png', desc: 'Image 01' },
         { set1: 'https://s26.postimg.org/n0q5iw0u1/ftfss2.png', desc: 'Image 02' },
-        { set1: 'https://s26.postimg.org/o30c1gty1/ftfss3.png', desc: 'Image 03' }
+        { set1: 'https://s26.postimg.org/o30c1gty1/ftfss3.png', desc: 'Image 03' },
+        { set1: 'https://s26.postimg.org/my7ni59ex/ftfss4.png', desc: 'Image 04' },
+        { set1: 'https://s26.postimg.org/5kxd3b195/ftfss5.png', desc: 'Image 05' }
       ];
 
 

@@ -180,13 +180,13 @@ md-list-item > button {
 
 .img-nav li {
   border: 5px solid #AAAAAA;
-    border-radius: 5px;
-    cursor: pointer;
-    display: inline-block;
-    height: 30px;
-    margin: 0 8px;
-    position: relative;
-    width: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  margin: 0 8px;
+  position: relative;
+  width: 50px;
 }
 
 .img-nav li.active {
@@ -217,17 +217,19 @@ md-list-item > button {
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d; */
 }
+
 .slide {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 15px;
   /* position: absolute; */
   top: 0;
   left: 0;
-  max-width: 700px;
-  max-height: 500px;
-
+  max-width: 680px;
+  max-height: 480px;
 }
+
 .slide.ng-hide-add {
   opacity:1;
 
@@ -248,9 +250,11 @@ md-list-item > button {
   -o-transform-origin: right top 0;
   transform-origin: right top 0; */
 }
+
 .slide.ng-hide-add.ng-hide-add-active {
   opacity:0;
 }
+
 .slide.ng-hide-remove {
   /* -webkit-transition:1s linear all;
   -moz-transition:1s linear all;
@@ -260,6 +264,7 @@ md-list-item > button {
   display:block!important;
   opacity:0;
 }
+
 .slide, .slide.ng-hide-remove.ng-hide-remove-active {
   opacity:1;
 }
